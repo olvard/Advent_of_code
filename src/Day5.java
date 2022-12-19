@@ -6,6 +6,15 @@ import java.util.Set;
 
 public class Day5 {
 
+    private static void dump(List<ArrayList<String>> stacks) {
+        for (ArrayList<String> stack : stacks) {
+            for (String s : stack) {
+                System.out.print(s);
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) throws Exception {
 
         ArrayList<String> stack1 = new ArrayList<String>();
@@ -59,6 +68,8 @@ public class Day5 {
                 move 2 from 2 to 1
                 move 1 from 1 to 2""";
 
+        dump(stacks);
+
         //------------------------------------------------------------------------------------
 
         String line;
@@ -95,9 +106,14 @@ public class Day5 {
 
         }
 
+
       for(int k = 0; k < 9; k++){
            System.out.println(stacks.get(k).get(stacks.get(k).size()-1));
        }
+
+      System.out.println("stacks: ");
+
+      dump(stacks);
 
        /*for(int k = 0; k < 9; k++){
            System.out.println(test.get(k).get(test.get(k).size()-1));
