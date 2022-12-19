@@ -96,7 +96,7 @@ public class Day5 {
 
             for(int j = 0; j < move; j++){
                 stacks.get(to).add(temp.get(temp.size()-1));
-                temp.remove(temp.get(temp.size()-1));
+                temp.remove(temp.size()-1);
             }
 
             /*for(int j = 0; j < move; j++){
