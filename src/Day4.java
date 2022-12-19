@@ -33,10 +33,6 @@ public class Day4 {
             String[] str2 = str[0].split("-");
             String[] str3 = str[1].trim().split("-");
 
-            /*System.out.println(str2[0]);
-            System.out.println(str2[1]);
-            System.out.println(str3[0]);
-            System.out.println(str3[1]);*/
 
             int first1 = Integer.parseInt(str2[0]);
             int first2 = Integer.parseInt(str2[1]);
